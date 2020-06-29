@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "BoloApp"
+    }
+  },
+  "defaultProject": "BoloApp",
+  "cli": {
+    "analytics": "6b500d7a-d094-4bd9-aa8a-a332bd486c6e"
+  }
 }

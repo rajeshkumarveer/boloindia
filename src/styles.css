@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+html,body{
+    margin: 0px;
+    height: 100%;
+    
+}
+.mid_home_div::-webkit-scrollbar {
+    width: 0px !important;
+}
+
+.btn-primary{
+    background-color: #1b6fddee;
+}
+@media only screen and (min-width: 1000px) {
+  body {
+    display:none;
+  }
+}
+@media only screen and (min-width: 700px) {
+    .mid_home_div {
+        padding: 44px 50px !important;
+    }
+    .post{
+        margin: 2vh 0 !important;
+        border: 1px solid #dbdbdb !important;
+        padding: 2vh 1vh !important;
+    }
+    #photomypost{
+        width: 40 !important;
+        margin: 1vh 0 !important;
+        height: 30 !important;
+    }
+    .article_post{
+        margin: 3vh 0 !important;
+        padding-bottom: 2vh !important;
+        border: 1px solid #dbdbdb !important;
+    }
+    .storydots{
+        text-align: end !important;
+    }
+    .every_activity {
+        padding: 44px 50px !important;
+    }
+    .imageview_img{
+        padding: 0px 50px !important;
+    }
+    .every_activity[_ngcontent-ngo-c52] {
+        padding: 44px 50px !important;
+    }
+    #download_symbol{
+        right: 40px !important;
+    }
+    .signup_div {
+        padding: 20vh 150px 0 150px !important;
+    }
+}

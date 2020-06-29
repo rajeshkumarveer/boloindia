@@ -1,0 +1,150 @@
+
+<style>
+    .home_header {
+        font-weight: 600;
+        font-size: 16px;
+        padding: 1vh;
+        z-index: 100;
+        height: 44px;
+        padding: 1vh 18px;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid #dbdbdb;
+        position: fixed;
+        display: flex;
+    }
+
+    .form-control {
+        font-size: 14px !important;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .home_footer {
+        background-color: white;
+        z-index: 100;
+        width: 100%;
+        height: 54px;
+        padding: 1vh 12px;
+        border-top: 1px solid #dbdbdb;
+        position: fixed;
+        bottom: 0px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    .every_activity .col-2 {
+        
+        padding-bottom: 1.5vh;
+        padding-top: 1.5vh;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    .every_activity {
+        padding: 1vh 18px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .every_activity .col-10 {
+        padding: 1.5vh 0;
+        line-height: 18px;
+        font-size: 16px;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    .every_activity .col-3 {
+        padding: 1.5vh 0;
+        text-align: center;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    .every_activity {
+        padding: 44px 2vh;
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    .every_activity button {
+        font-size: 14px;
+    }
+</style>
+<div>
+    <div class="home_header ">
+        <div class="col-2">
+            <a routerLink="/">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 172 172"
+                    style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <g fill="#333333">
+                            <path
+                                d="M40.02135,51.54401c-1.48951,0.04438 -2.90324,0.6669 -3.94167,1.73568l-28.16276,28.16276c-1.41918,1.08154 -2.25398,2.76211 -2.25837,4.54643c-0.00439,1.78431 0.82213,3.46898 2.23597,4.55748c0.01117,0.0075 0.02237,0.01497 0.03359,0.02239l28.15156,28.15156c1.43802,1.49776 3.57339,2.1011 5.58258,1.57732c2.00919,-0.52378 3.57824,-2.09283 4.10202,-4.10202c0.52378,-2.00919 -0.07955,-4.14456 -1.57731,-5.58258l-18.87969,-18.87969h135.22604c2.06765,0.02924 3.99087,-1.05709 5.03322,-2.843c1.04236,-1.78592 1.04236,-3.99474 0,-5.78066c-1.04236,-1.78592 -2.96558,-2.87225 -5.03322,-2.843h-135.22604l18.87969,-18.87969c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44951,-3.49667z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <div class="col-10" style="text-align: end;">
+            Comments
+        </div>
+    </div>
+    
+
+    <div class="every_activity">
+        <div class="row">
+            <div class="col-2">
+                <app-usericon></app-usericon>
+            </div>
+            <div class="col-10">
+                <b>--------------------</b><br>
+                <div style="display:flex;color:rgb(158, 161, 161);font-size:11px;">
+                        <div class="col-1" style="padding:0 !important;border:none !important">1 Hr</div>
+                        <div class="col-2" style="padding:0 !important;border:none !important;text-align: center;">Like</div>
+                        <div class="col-2" style="padding:0 !important;border:none !important">Reply</div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-2">
+                <app-usericon></app-usericon>
+            </div>
+            <div class="col-10">
+                <b>--------------------</b><br>
+                <div style="display:flex;color:rgb(158, 161, 161);font-size:11px;">
+                    <div class="col-1" style="padding:0 !important;border:none !important">1 Hr</div>
+                    <div class="col-2" style="padding:0 !important;border:none !important;text-align: center;">Like</div>
+                    <div class="col-2" style="padding:0 !important;border:none !important">Reply</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="home_footer">
+
+        <div style="display:flex;">
+            <div class="col-2">
+                <app-usericon></app-usericon>
+            </div>
+            <div class="col-8">
+                <input type="email" class="form-control" id="commentsinput" placeholder="comments...">
+            </div>
+            <div class="col-2">
+                <button class="btn btn-primary"><a routerLink="/">Post</a></button>
+            </div>
+
+        </div>
+    
+    </div>
+
+</div>
+

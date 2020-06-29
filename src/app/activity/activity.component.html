@@ -1,0 +1,87 @@
+<style>
+    .home_header {
+        font-weight: 600;
+        font-size: 18px;
+        padding: 1vh;
+        z-index: 100;
+        height: 44px;
+        padding: 1vh 18px;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid #dbdbdb;
+        position: fixed;
+        text-align: center;
+    }
+
+    .every_activity .col-2 {
+        
+        padding-bottom: 1.5vh;
+        padding-top: 1.5vh;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    .every_activity {
+        padding: 1vh 18px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .every_activity .col-7 {
+        padding: 1.5vh 0;
+        line-height: 18px;
+        font-size: 16px;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    .every_activity .col-3 {
+        padding: 1.5vh 0;
+        text-align: center;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    .every_activity {
+        padding: 44px 2vh;
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    .every_activity button {
+        font-size: 14px;
+    }
+</style>
+<div>
+    <div class="home_header">
+        Activity
+    </div>
+
+    <div class="every_activity">
+        <div class="row">
+            <div class="col-2">
+                <app-usericon></app-usericon>
+            </div>
+            <div class="col-7">
+                <b>--------------------</b><br>
+                -------------------
+            </div>
+            <div class="col-3">
+                <button type="button" class="btn btn-primary">Follow</button>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-2">
+                <app-usericon></app-usericon>
+            </div>
+            <div class="col-7">
+                <b>--------------------</b><br>
+                -------------------
+            </div>
+            <div class="col-3">
+                <button type="button" class="btn btn-light ">Following</button>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <app-appfooter [activeId]="4"></app-appfooter>
+</div>

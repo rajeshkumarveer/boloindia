@@ -1,0 +1,72 @@
+<style>
+    .signup_div {
+        padding: 20vh 3vh 0 3vh;
+        text-align: center;
+    }
+
+    .Brand_div {
+        display: flex;
+        width: 25vh;
+        margin: 4vh auto !important;
+        align-items: center;
+    }
+
+    .Brand_name {
+        font-size: 27px;
+        padding-left: .5vh;
+        font-family: 'Rye', cursive;
+        background: linear-gradient(to right, #1b6fddee 70%,rgb(88, 129, 241) 0%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .Brand_img {
+        border-radius: 50px;
+    }
+    .btn{
+        width: 100% !important;
+        padding: .675rem .75rem !important;
+    }
+    .btn,input{
+        padding: .475rem .75rem;
+        font-size: .9rem;
+    }
+    .signup_sideinfo{
+        font-size: .725rem;
+        color: #8e8e8e;
+    }
+    .signup_end{
+        width: 100%;
+        text-align: center;
+        padding: .775rem .75rem !important;
+        border-top: 1px solid #dbdbdb;
+        position: absolute;
+        bottom: 0px;
+    }
+    a,b{
+        color: black;
+        text-decoration: none ;
+    }
+    .errormsg{
+        font-size: .9rem;
+        color: rgb(211, 22, 22);
+    }
+</style>
+<div class="signup_div">
+    <div class="Brand_div">
+        <img src="../../assets/logo2.png" alt="Brand logo" width="28px" height="28px" class="Brand_img" />
+        <span class="Brand_name">BoloIndia</span>
+    </div>
+    <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Email or username" #email  >
+    </div>
+    <div class="mb-3">
+        <input type="password" class="form-control" placeholder="password" #password >
+    </div>
+    <div class="mb-1">
+        <button type="button" class="btn btn-primary btn-block" (click)="login($event,email,password)">Login</button>
+    </div>
+    <div class="mb-3 errormsg">{{error}}</div>
+    <div class="signup_sideinfo">Forgot your login details ? <a routerLink="/signup"><b>Get help signing in</b></a></div>
+</div>
+<div class="signup_sideinfo signup_end">Don't have an account? <a routerLink="/signup"><b>Sign Up</b></a></div>
