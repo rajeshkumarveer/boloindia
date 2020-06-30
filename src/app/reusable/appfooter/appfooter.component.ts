@@ -22,7 +22,6 @@ export class AppfooterComponent implements OnInit {
     if(this.activeId=="2")document.getElementById("2").style.fill="#1b6fddee";
     if(this.activeId=="3")document.getElementById("3").style.fill="#1b6fddee";
     if(this.activeId=="4")document.getElementById("4").style.fill="#1b6fddee";
-    console.log(this.activeId=="1");
     
   }
 
